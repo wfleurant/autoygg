@@ -602,7 +602,7 @@ func ServerMain() {
 
 	if viper.GetBool("Help") {
 		serverUsage(fs)
-		os.Exit(1)
+		os.Exit(0)
 	}
 
 	if viper.GetBool("DumpConfig") {
