@@ -1,0 +1,5 @@
+build_image:
+  image: golang:latest
+
+  script:
+      - cd cmd && cd autoygg-client && make build && cd .. && cd autoygg-server && make build
